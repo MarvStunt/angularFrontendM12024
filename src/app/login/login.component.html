@@ -1,0 +1,12 @@
+<div class="loginForm">
+  <h1>Connexion</h1>
+  <form ngForm (submit)="onSubmit($event)" class="form" #loginForm="ngForm">
+    <mat-form-field>
+        <input matInput [(ngModel)]="login" name="login" placeholder="Identifiant">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput [(ngModel)]="password" name="password" placeholder="Mot de passe" type="password">
+    </mat-form-field>
+    <button mat-stroked-button color="primary">Se connecter</button>
+  </form>
+</div>
